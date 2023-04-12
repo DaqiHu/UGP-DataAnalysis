@@ -1,2 +1,5 @@
-a, b = map(int, input().split())
-print(a + b)
+import pandas as pd
+
+file = pd.read_csv("data.csv")
+
+file.to_excel("output.xlsx")
