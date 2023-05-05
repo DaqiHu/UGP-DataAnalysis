@@ -1,9 +1,6 @@
 import csv
 import wcwidth
 from tabulate import tabulate
-with open(r"data.csv", newline="", encoding="utf-8") as csvFile:
-    dataReader = csv.reader(csvFile)
-    data = list(dataReader)
 
 def showSubjects(items: list[list[str]], sortBy="semester"):
     titleBar = items[0]
@@ -40,9 +37,47 @@ def findSubjects(items: list[list[str]], score, above=True) -> list[str]:
         
     return result
 
-showSubjects(data)
-showSubjects(data, sortBy="score")
-showSubjects(data, sortBy="weightedScore")
-showSubjects(data, sortBy="credit")
+def weightedCredit(items: list[list[str]]) -> float:
+    def getCredit(score: float) -> float:
+        if score >= 90.0:
+            return 4.0
+        elif score >= 85.0:
+            return 3.7
+        elif score >= 82.0:
+            return 3.3
+        elif score >= 78.0:
+            return 3.0
+        elif score >= 75.0:
+            return 2.7
+        elif score >= 72.0:
+            return 2.3
+        elif score >= 68.0:
+            return 2.0
+        elif score >= 60.0:
+            return 1.0
+        else:
+            return 0.0
+    
+    # (weight, credit)
+    data = [(float(i[5]), getCredit(float(i[8]))) for i in items]
+    return sum([i[0] * i[1] for i in data]) / sum([i[0] for i in data])
 
-print(f"{weightedAverageScore(data):.2f}")
+def main():
+    with open(r"data.csv", newline="", encoding="utf-8") as csvFile:
+        dataReader = csv.reader(csvFile)
+        data = list(dataReader)
+
+    showSubjects(data)
+    showSubjects(data, sortBy="score")
+    showSubjects(data, sortBy="weightedScore")
+    showSubjects(data, sortBy="credit")
+
+    print(f"{weightedAverageScore(data):.2f}")
+
+    term2A = [i for i in data if i[0] == "2A"]
+    showSubjects(term2A, sortBy="credit")
+    print(f"{weightedCredit(term2A):.2f}")
+
+
+if __name__ == "__main__":
+    main()
