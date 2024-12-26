@@ -1,19 +1,17 @@
 import csv
 import wcwidth
+from tabulate import tabulate
 
 
-def getScore(scoreTextRaw) -> float:
-    if not isinstance(scoreTextRaw, str):
-        return float(scoreTextRaw)
-
-    scoreText = scoreTextRaw.replace("\xa0", "")
-
-    # early-out if is int/float number
-    if not scoreText.isalpha():
+def getScore(scoreText) -> float:
+    if not isinstance(scoreText, str):
         return float(scoreText)
 
-    # convert Chinese literal into number
-    match scoreText:
+    newText = scoreText.replace("\xa0", "")
+    if not newText.isalpha():
+        return float(newText)
+
+    match newText:
         case "优秀":
             return 90.0
         case "良好":

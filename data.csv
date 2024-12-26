@@ -1,44 +1,73 @@
 ﻿学期,课程号,课序号,课程名,英文课程名,学分,课程属性,是否学位课,成绩
-1A,3015021,3,C++课程设计1,,1,必修,是,90.0 
-1A,3067021,3,面向对象C++程序设计1,,3,必修,是,97.0 
-1A,3388011,1,专业导论（软件工程）,,1,必修,是,86.0 
+1A,3015021,3,C++课程设计1,Course Design of C++ Programming Language 1,1,必修,是,优秀 
+1A,3067021,3,面向对象C++程序设计1,Object-Oriented C++ Programming 1,3,必修,是,97.0 
+1A,3388011,1,专业导论（软件工程）,Professional Introduction (Software Engineering),1,必修,是,86.0 
 1A,5001031,3,思想道德与法治,Ethics and Law,3,必修,是,85.0 
-1A,5005021,18,大学英语1,,3.5,必修,是,87.0 
-1A,6101011,15,高等数学1,Higher Mathematics,5,必修,是,68
-1A,6301021,40,体育1,P.E,1,必修,是,92.0 
-1A,7003011,5,军事训练,Military Training,2,必修,是,80.0 
-1A,7005021,5,职业生涯规划与就业指导1,Career Development and Employment Guidance1,0.5,必修,是,86.0 
-1A,7006011,5,军事理论,,2,必修,是,85.0 
-1A,7007021,5,大学生心理健康,,1,必修,是,90.0 
-1B,3015022,4,C++课程设计2,,1,必修,是,90.0 
-1B,3053031,1,计算机电子电路基础,,3,必修,是,78.0 
-1B,3063011,3,离散数学,Discrete Mathematics,4,必修,是,80
-1B,3067032,4,面向对象C++程序设计2,,2,必修,是,93.0 
+1A,5005021,18,大学英语1,College English 1,3.5,必修,是,87.0 
+1A,6101011,15,高等数学1,Higher Mathematics 1,5,必修,是,68.0 
+1A,6301021,40,体育1,P.E 1,1,必修,是,92.0 
+1A,7003011,5,军事训练,Military Training,2,必修,是,良好 
+1A,7005021,5,职业生涯规划与就业指导1,Career Development and Employment Guidance 1,0.5,必修,是,86.0 
+1A,7005111,23,创新创业教育与训练,Innovation and Entrepreneurship Education and Training,2,必修,是,93.0 
+1A,7006011,5,军事理论,Military Theory,2,必修,是,85.0 
+1A,7007021,5,大学生心理健康,Psychological Health of College Students,1,必修,是,90.0 
+1B,3015022,4,C++课程设计2,Course Design of C++ Programming Language 2,1,必修,是,优秀 
+1B,3053031,1,计算机电子电路基础,Fundamentals of Computer Electronic Circuits,3,必修,是,78.0 
+1B,3063011,3,离散数学,Discrete Mathematics,4,必修,是,80.0 
+1B,3067032,4,面向对象C++程序设计2,Object-Oriented C++ Programming 2,2,必修,是,93.0 
 1B,5002021,8,中国近现代史纲要,Compendium of Chinese Neoteric & Modern History,3,必修,是,70.0 
-1B,5005012,37,大学英语2,,4,必修,是,86.0 
-1B,6101012,6,高等数学2,Higher Mathematics,6,必修,是,86
-1B,6301022,40,体育2,P.E,1,必修,是,91.0 
-1B,99034311,1,视觉与艺术,Vision and Art,1,任选,,70
+1B,5005012,37,大学英语2,College English 2,4,必修,是,86.0 
+1B,6101012,6,高等数学2,Higher Mathematics 2,6,必修,是,86.0 
+1B,6301022,40,体育2,P.E 2,1,必修,是,91.0 
+1B,99034311,1,视觉与艺术,Vision and Art,1,任选,,70.0 
 2A,3083011,5,数据结构,Data Structure,4,必修,是,87.0 
-2A,3085011,5,数据结构课程设计,,1,必修,是,90.0 
-2A,3237041,2,Python语言程序设计,,3,必修,是,94.0 
-2A,3285011,4,Python语言课程设计,,1,必修,是,96.0 
-2A,3403011,1,R语言与数据分析,,2,必修,是,83.0 
-2A,3407011,1,R语言课程设计,,1,必修,是,80.0 
-2A,6301023,34,体育3,P.E,1,必修,是,81.0 
-2A,99001831,1,创造性思维与创新方法1,,1,任选,,94.0 
-2A,99010251,1,互联网金融,,1,任选,,97.0 
-2A,5005013,30,大学英语3,,2,必修,是,86.0 
-2A,5003021,15,马克思主义基本原理概论,,3,必修,是,83.0 
-2A,3389011,2,数字系统与逻辑设计,,3,必修,是,81.0 
-2A,3389011,2,线性代数,,2.5,必修,是,94.0 
-2B,3019011,2,Java程序设计,Java programming,3.5,必修,是,95.0 
-2B,3021011,4,Java课程设计,,1,必修,是,90
-2B,3244021,2,Linux操作系统原理与应用,,3,必修,是,96.0 
-2B,3245011,3,Linux操作系统课程设计,,1,必修,是,80
-2B,5004031,5,毛泽东思想和中国特色社会主义理论体系概论,,3,必修,是,79.0 
-2B,5004111,5,习近平新时代中国特色社会主义思想概论,Xi Jinping Thought on Socialism with Chinese Characteristics for a New Era,3,必修,是,75.0 
+2A,3085011,5,数据结构课程设计,Course Design of Data Structure,1,必修,是,90.0 
+2A,3237041,2,Python语言程序设计,Python Programming Language,3,必修,是,94.0 
+2A,3285011,4,Python语言课程设计,Course Design of Python Language,1,必修,是,96.0 
+2A,3389011,2,数字系统与逻辑设计,Digital System and Logic Design,3,必修,是,81.0 
+2A,3403011,1,R语言与数据分析,R Programming Language and Data Analysis,2,必修,是,83.0 
+2A,3407011,1,R语言课程设计,Course Design of R Programming Language,1,必修,是,良好 
+2A,5003021,15,马克思主义基本原理概论,Introduction to the Basic Principles of Marxism,3,必修,是,83.0 
+2A,5005013,30,大学英语3,College English 3,2,必修,是,86.0 
+2A,6107021,14,线性代数,Linear Algebra,2.5,必修,是,94.0 
+2A,6301023,34,体育3,P.E 3,1,必修,是,81.0 
+2A,99001831,1,创造性思维与创新方法1,Creative Thinking and Innovative Methods,1,任选,,94.0 
+2A,99010251,1,互联网金融,Internet Finance,1,任选,,97.0 
+2B,3019011,2,Java程序设计,Java Programming Language,3.5,必修,是,95.0 
+2B,3021011,4,Java课程设计,Course Design of Java Programming Language,1,必修,是,优秀 
+2B,3087031,4,数据库系统,Database System,3,必修,是,92.0 
+2B,3168011,2,专业认知实习,Professional Cognitive Practice,1,必修,是,83.0 
+2B,3244021,2,Linux操作系统原理与应用,Principles and Applications of Linux Operating System,3,必修,是,96.0 
+2B,3245011,3,Linux操作系统课程设计,Course Design of Linux Operating System ,1,必修,是,良好 
+2B,5004031,5,毛泽东思想和中国特色社会主义理论体系概论,Introduction to the Basic Principles of Marxism,3,必修,是,79.0 
+2B,5004111,5,习近平新时代中国特色社会主义思想概论,Introduction to Xi Jinping's Thought on Socialism with Chinese Characteristics in the New Era,3,必修,是,75.0 
+2B,5005034,17,科技英语,English for Science and Technology,2,必修,是,84.0 
 2B,6110011,16,概率与统计,Probability and Statistics,3,必修,是,69.0 
-2B,6301024,23,体育4,P.E,1,必修,是,87.0 
+2B,6301024,23,体育4,P.E 4,1,必修,是,87.0 
+2B,7009021,18,劳动教育,Labour Education,1,必修,是,79.0 
 2B,99001371,1,音乐鉴赏1,Music Appreciation,1,任选,,100.0 
 2B,99033511,1,民间美术,Folk Fine Arts,1,任选,,100.0 
+3A,3039011,5,操作系统,Operation Systems,3,必修,是,72.0 
+3A,3040021,5,操作系统课程设计,Course Design of Operation System,1,必修,是,良好 
+3A,3054031,6,计算机网络,Computer Network,3,必修,是,82.0 
+3A,3057011,2,计算机组成原理,Principles of Computer Organization,4,必修,是,77.0 
+3A,3074011,4,软件工程与方法学,Software Engineering and Methodology,2.5,必修,是,62.0 
+3A,3091021,1,网络课程设计,Course Design of Web Development,1,必修,是,中等 
+3A,3271021,2,微信公众平台开发,Development on Wechat Platform,2,任选,否,87.0 
+3A,3315011,1,分布式数据库应用课程设计,Course Design of Distributed Database,1,必修,是,优秀 
+3A,3316021,1,分布式数据库原理与应用,Principles and Applications of Distributed Database,2.5,必修,是,90.0 
+3A,3323021,1,机器学习,Machine Learning,2,必修,是,80.0 
+3A,3324011,1,机器学习课程设计,Course Design of Machine Learning,1,必修,是,良好 
+3A,99035111,1,安全用电,Using Electricity Safely,1,任选,,81.0 
+3B,3030011,1,UML和面向对象的系统分析与设计,UML and Object-Oriented System Analysis and Design,2.5,必修,是,81.0 
+3B,3079031,2,软件项目管理,Software Project Management,2,任选,否,及格 
+3B,3107011,3,专业英语,English on Civil Engineering,2,必修,是,81.0 
+3B,3165011,2,生产实习,Production Practice,3,必修,是,96.0 
+3B,3302011,1,Hadoop大数据技术,Hadoop and Big Data,3,必修,是,69.0 
+3B,3303011,1,Hadoop大数据技术课程设计,Course Design of Hadoop and Big Data,1,必修,是,优秀 
+3B,3309011,1,大数据预处理课程设计,Course Design of Big Data Preprocessing,1,必修,是,88.0 
+3B,3310011,1,大数据预处理与可视化分析,Big Data Preprocessing and Visualized Analysis,2,必修,是,87.0 
+3B,3352021,1,虚拟化技术,Virtualization Technology,2,任选,否,83.0 
+3B,3404011,1,网络爬虫与信息提取,Web Crawling and Data Extraction,2,必修,是,92.0 
+3B,3408011,1,网络爬虫课程设计,Course Design of Web Crawling,1,必修,是,88.0 
+3B,7005022,11,职业生涯规划与就业指导2,Career Development and Employment Guidance 2,0.5,必修,是,90.0 
