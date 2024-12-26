@@ -2,15 +2,16 @@ import csv
 import wcwidth
 from tabulate import tabulate
 
+
 def getScore(scoreText) -> float:
     if not isinstance(scoreText, str):
         return float(scoreText)
-    
-    scoreText.replace("\xa0", "")
-    if not scoreText.isalpha():
-        return float(scoreText)
-    
-    match scoreText:
+
+    newText = scoreText.replace("\xa0", "")
+    if not newText.isalpha():
+        return float(newText)
+
+    match newText:
         case "优秀":
             return 90.0
         case "良好":
@@ -21,6 +22,7 @@ def getScore(scoreText) -> float:
             return 60.0
         case "不及格":
             return 0.0
+
 
 def showSubjects(items: list[list[str]], sortBy="semester"):
     titleBar = items[0]
@@ -39,6 +41,7 @@ def showSubjects(items: list[list[str]], sortBy="semester"):
     print(f"\nSorted by {sortBy}:")
     print(tabulate(output, headers=titleBar))
 
+
 def weightedAverageScore(items: list[list[str]]) -> float:
     total = 0.0
     creditTotal = 0.0
@@ -47,6 +50,7 @@ def weightedAverageScore(items: list[list[str]]) -> float:
         creditTotal += getScore(item[5])
     return total / creditTotal
 
+
 def findSubjects(items: list[list[str]], score, above=True) -> list[str]:
     result = []
     for item in items[1:]:
@@ -54,8 +58,9 @@ def findSubjects(items: list[list[str]], score, above=True) -> list[str]:
             result.append(item)
         elif not above and item[8] < score:
             result.append(item)
-        
+
     return result
+
 
 def weightedCredit(items: list[list[str]]) -> float:
     def getCredit(score: float) -> float:
@@ -77,10 +82,11 @@ def weightedCredit(items: list[list[str]]) -> float:
             return 1.0
         else:
             return 0.0
-    
+
     # (weight, credit)
     data = [(getScore(i[5]), getCredit(getScore(i[8]))) for i in items]
     return sum([i[0] * i[1] for i in data]) / sum([i[0] for i in data])
+
 
 def main():
     with open(r"data.csv", newline="", encoding="utf-8") as csvFile:
@@ -90,7 +96,6 @@ def main():
     showSubjects(data, sortBy="weightedScore")
 
     showSubjects([i for i in data if i[0] == "2A" and getScore(i[8]) < 90], sortBy="weightedScore")
-
 
     print("-----------------------------------------------------")
     print(f"加权平均分：    {weightedAverageScore(data):.2f}")
