@@ -2,6 +2,15 @@ import csv
 import wcwidth
 from tabulate import tabulate
 
+semesterAllowList = [
+    # "1A",
+    # "1B",
+    "2A",
+    "2B",
+    "3A",
+    "3B",
+]
+
 
 def getScore(scoreText) -> float:
     if not isinstance(scoreText, str):
@@ -86,8 +95,12 @@ def weightedCredit(items: list[list[str]]) -> float:
         else:
             return 0.0
 
+    # 0     1       2   3              4                                           5   6      7   8
+    # 1A	3015021	3	C++课程设计1	Course Design of C++ Programming Language 1	1	必修	是	优秀
+    # 1A	7006011	5	军事理论	    Military Theory	                            2	必修	是	85.0
+
     # (weight, credit)
-    data = [(getScore(i[5]), getCredit(getScore(i[8]))) for i in items]
+    data = [(getScore(i[5]), getCredit(getScore(i[8]))) for i in items if i[0] in semesterAllowList]
     return sum([i[0] * i[1] for i in data]) / sum([i[0] for i in data])
 
 
